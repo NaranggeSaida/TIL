@@ -4,7 +4,7 @@
 int matrix[1001][1001] = { 0, };
 int visit_DFS[1001] = { 0, };
 int visit_BFS[1001] = { 0, };
-int queue[1001];
+int queue[1000001];
 int front = 0;
 int rear = 0;
 
@@ -20,6 +20,8 @@ void DFS(int N, int V) {
 			DFS(N, i);
 		}
 	}
+
+	return;
 }
 int is_empty() {
 	if (rear == front) {
@@ -32,12 +34,13 @@ int is_empty() {
 
 void enqueue(int n) {
 	queue[rear++] = n;
+
+	return;
 }
 
 int dequeue() {
 	return(queue[front++]);
 }
-
 
 void BFS(int N, int V) {
 	enqueue(V);
@@ -57,6 +60,8 @@ void BFS(int N, int V) {
 			}
 		}
 	}
+
+	return;
 }
 
 int main(void) {
