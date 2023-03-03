@@ -23,6 +23,7 @@ void DFS(int N, int V) {
 
 	return;
 }
+
 int is_empty() {
 	if (rear == front) {
 		return 1;
