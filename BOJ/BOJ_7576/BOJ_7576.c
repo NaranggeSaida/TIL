@@ -27,6 +27,7 @@ int main(void) {
     for (int i = 1; i <= N; i++) {
         for (int j = 1; j <= M; j++) {
             scanf("%d", &map[i][j]);
+
             if (map[i][j] == 1) {
                 q[tail][0] = i;
                 q[tail][1] = j;
@@ -39,6 +40,7 @@ int main(void) {
         x = q[head][0];
         y = q[head][1];
         head++;
+
         for (int i = 0; i < 4; i++) {
             if (x + dx[i] <= N && y + dy[i] <= M && x + dx[i] >= 1 && y + dy[i] >= 1 && map[x + dx[i]][y + dy[i]] == 0) {
                 map[x + dx[i]][y + dy[i]] = 1;
