@@ -62,9 +62,11 @@ int main(void) {
                 count = 1;
         }
     }
+
     if (count == 1)
         printf("-1\n");
     else
         printf("%d\n", days);
+
     return 0;
 }
