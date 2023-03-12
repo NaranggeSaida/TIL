@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #define min(a, b) (((a) < (b)) ? (a) : (b))
-s
+
 int main(void) {
 	int N, a, b;
 	int matrix[500][2];
